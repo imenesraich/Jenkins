@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.cucumber:cucumber-junit:6.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-junit/6.0.0/16ce91e4baffa874a6f944e7e238c02dd858d954/cucumber-junit-6.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.cucumber/cucumber-junit/6.0.0/8299b508bd1c85d7d0e0e02bfc39382c9823c9a8/cucumber-junit-6.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,57 @@
+plugins {
+  id 'java'
+  id 'jacoco'
+  id 'maven-publish'
+  id 'org.sonarqube' version '4.4.1.3373' // Required for Jenkins to trigger the analysis
+}
+group = 'Sraich.Imene'
+version = '1.0.0'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  // Cucumber dependencies remain for running tests,
+  // but the reporting logic is moved to Jenkins
+  testImplementation 'io.cucumber:cucumber-java:6.0.0'
+  testImplementation 'io.cucumber:cucumber-junit:6.0.0'
+  testImplementation 'junit:junit:4.12'
+}
+
+jacoco {
+  toolVersion = "0.8.8"
+}
+
+// Documentation generation for the 'Build' phase [cite: 1]
+javadoc {
+  options.encoding = 'UTF-8'
+  options.charSet = 'UTF-8'
+  destinationDir = file("${layout.buildDirectory.get()}/docs/javadoc")
+  options.author = true
+  options.version = true
+  options.windowTitle = "TP7 - Documentation API"
+  options.docTitle = "TP7 - Documentation de l'API"
+}
+
+
+// Deployment configuration for the 'Deploy' phase [cite: 1]
+publishing {
+  repositories {
+    maven {
+      // Jenkins will provide these via Global Properties
+      url = findProperty("url_maven")
+      credentials {
+        username = findProperty("mavenRepoUser")
+        password = findProperty("mavenRepoPassword")
+      }
+    }
+  }
+
+  publications {
+    maven(MavenPublication) {
+      from components.java
+    }
+  }
+}
+// add some comments to  test the piepline via github
