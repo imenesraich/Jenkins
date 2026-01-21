@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Tp7.iml" filepath="$PROJECT_DIR$/Tp7.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tp7.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Tp7.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tp7.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Tp7.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tp7_SRAICH.iml" filepath="$PROJECT_DIR$/.idea/modules/tp7_SRAICH.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tp7_SRAICH.main.iml" filepath="$PROJECT_DIR$/.idea/modules/tp7_SRAICH.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tp7_SRAICH.test.iml" filepath="$PROJECT_DIR$/.idea/modules/tp7_SRAICH.test.iml" />
     </modules>
   </component>
 </project>

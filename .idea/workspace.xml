@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c52f4fd-822d-477e-b8fc-9d00b49151e2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/exception/NoSquareException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/model/Matrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/service/MatrixMathematics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ExampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MatrixSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/tp7_SRAICH.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/tp7_SRAICH.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/tp7_SRAICH.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/sha1-checksums.bin" afterDir="false" />
@@ -19,10 +21,40 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Tp7.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Tp7.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/Tp7.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/Tp7.test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Tp7.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Tp7.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Jenkinsfile" beforeDir="false" afterPath="$PROJECT_DIR$/Jenkinsfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tp7.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/jacoco/test.exec" beforeDir="false" afterPath="$PROJECT_DIR$/build/jacoco/test.exec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Tp7-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Tp7-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/Matrix.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/Matrix.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-Matrix.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-Matrix.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/expanded.lock" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/.cache/expanded/expanded.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_a33b649e552c51298e5a242c2f0d0e3c/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_a33b649e552c51298e5a242c2f0d0e3c/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_a33b649e552c51298e5a242c2f0d0e3c/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_a33b649e552c51298e5a242c2f0d0e3c/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_a33b649e552c51298e5a242c2f0d0e3c/jacocoagent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_a33b649e552c51298e5a242c2f0d0e3c/org/jacoco/agent/AgentJar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_b7e3e3efc9fa7b01ca2c5374419709e6/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_b7e3e3efc9fa7b01ca2c5374419709e6/META-INF/maven/org.jacoco/org.jacoco.agent/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_b7e3e3efc9fa7b01ca2c5374419709e6/META-INF/maven/org.jacoco/org.jacoco.agent/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_b7e3e3efc9fa7b01ca2c5374419709e6/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_b7e3e3efc9fa7b01ca2c5374419709e6/jacocoagent.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_b7e3e3efc9fa7b01ca2c5374419709e6/org/jacoco/agent/AgentJar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/.cache/expanded/zip_b7e3e3efc9fa7b01ca2c5374419709e6/org/jacoco/agent/package-info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/example-report.json" beforeDir="false" afterPath="$PROJECT_DIR$/reports/example-report.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +86,13 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -74,17 +113,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "D:/Bureau/test/Tp7/src",
+    "last_opened_file_path": "D:/Bureau/test/Tp7/build/reports/jacoco/test/html",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Bureau\test\Tp7\src" />
+      <recent name="D:\Bureau\test\Tp7\build\reports\jacoco\test\html" />
+      <recent name="D:\Bureau\test\Tp7\build\reports\jacoco\test" />
       <recent name="D:\Bureau\test\Tp7" />
+      <recent name="D:\Bureau\test\Tp7\src" />
       <recent name="D:\Bureau\test\Tp7\gradle\wrapper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Bureau\test\Tp7\build\reports\jacoco\test" />
       <recent name="D:\Bureau\test\Tp7\src\test" />
       <recent name="D:\Bureau\projets" />
       <recent name="D:\Bureau\projets\pdc\Tp7" />

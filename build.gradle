@@ -3,25 +3,49 @@ plugins {
   id 'jacoco'
   id 'maven-publish'
   id 'org.sonarqube' version '4.4.1.3373' // Required for Jenkins to trigger the analysis
-}
-group = 'Sraich.Imene'
-version = '1.0.0'
 
+}
+
+group = 'Sraich.Imene'
+version = '1.0'
+tasks.sonarqube {
+  dependsOn test
+}
 repositories {
   mavenCentral()
 }
 
 dependencies {
-  // Cucumber dependencies remain for running tests,
-  // but the reporting logic is moved to Jenkins
+
   testImplementation 'io.cucumber:cucumber-java:6.0.0'
   testImplementation 'io.cucumber:cucumber-junit:6.0.0'
   testImplementation 'junit:junit:4.12'
 }
 
 jacoco {
-  toolVersion = "0.8.10"
+  toolVersion = "0.8.12"
 }
+jacocoTestReport {
+  dependsOn test
+
+  reports {
+    xml.required = true
+    html.required = true
+  }
+}
+
+/*sonarqube {
+  properties {
+    property "sonar.projectName", "MonTP"
+    property "sonar.projectKey", "mon_tp_key"
+    property "sonar.host.url", "http://localhost:9000"
+    property "sonar.login", "admin"
+    property "sonar.password", "kouharu@20000"
+    property "sonar.java.binaries", "build/classes/java/main"
+    property "sonar.junit.reportPaths", "build/test-results/test"
+    property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
+  }
+}*/
 
 // Documentation generation for the 'Build' phase [cite: 1]
 javadoc {
@@ -34,16 +58,42 @@ javadoc {
   options.docTitle = "TP7 - Documentation de l'API"
 }
 
+test {
+  finalizedBy jacocoTestReport
+}
 
-// Deployment configuration for the 'Deploy' phase [cite: 1]
+/*sonarqube {
+  properties {
+    property "sonar.projectKey","Gradle_Example"
+    property "sonar.host.url", "http://197.140.142.235:9000"
+    property "sonar.coverage.jacoco.xmlReportPaths", "build/reports/jacoco/test/jacocoTestReport.xml"
+
+  }
+}*/
+sonarqube {
+  properties {
+    property "sonar.projectKey", "Tp7"
+    property "sonar.projectName", "Tp7"
+    property "sonar.projectVersion", "1.0"
+    property "sonar.sources", "src/main/java"
+    property "sonar.tests", "src/test/java"
+    property "sonar.language", "java"
+    property "sonar.sourceEncoding", "UTF-8"
+    property "sonar.java.binaries", "build/classes/java/main"
+    property "sonar.host.url", "http://localhost:9000"
+    property "sonar.login", "squ_dfe315a06447b0d33643bdb6a2a3cb20ca36590a"
+    property "sonar.java.coveragePlugin", "jacoco"
+    property "sonar.jacoco.reportPaths", "build/jacoco/test.exec"
+  }
+}
+
 publishing {
   repositories {
     maven {
-      // Jenkins will provide these via Global Properties
-      url = findProperty("url_maven")
+      url 'https://mymavenrepo.com/repo/cEmjfkxugPlzLxXg1A2B/'
       credentials {
-        username = findProperty("mavenRepoUser")
-        password = findProperty("mavenRepoPassword")
+        username 'myMavenRepo'
+        password 'test0005'
       }
     }
   }
