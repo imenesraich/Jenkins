@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SONARQUBE_SCANNER = tool 'SonarQubeScanner' // Name of SonarQube scanner tool in Jenkins
+        SONARQUBE_SCANNER = tool 'SonarQubeScanner' // SonarQube scanner tool name in Jenkins
         MAVEN_REPO_URL    = "${MAVEN_REPO_URL}"
         MAVEN_REPO_USER   = "${MAVEN_REPO_USER}"
         MAVEN_REPO_PASS   = "${MAVEN_REPO_PASS}"
@@ -16,8 +16,6 @@ pipeline {
             }
         }
 
-
-
         stage('Build') {
             steps {
                 echo 'Building JAR...'
@@ -30,13 +28,21 @@ pipeline {
                 archiveArtifacts artifacts: 'build/libs/*.jar, build/docs/javadoc/**', fingerprint: true
             }
         }
-   stage('Code Quality') {
+
+        stage('Code Quality') {
             steps {
-                withSonarQubeEnv('sonar') { // SonarQube server name in Jenkins
-                    bat "\"%SONARQUBE_SCANNER%\\bin\\sonar-scanner.bat\" -Dsonar.projectKey=Tp7 -Dsonar.projectName=Tp7"
+                withSonarQubeEnv('sonar') {
+                    bat "\"%SONARQUBE_SCANNER%\\bin\\sonar-scanner.bat\" " +
+                        "-Dsonar.projectKey=Tp7 " +
+                        "-Dsonar.projectName=Tp7 " +
+                        "-Dsonar.sources=src/main/java " +
+                        "-Dsonar.java.binaries=build/classes/java/main " +
+                        "-Dsonar.tests=src/test/java " +
+                        "-Dsonar.java.test.binaries=build/classes/java/test"
                 }
             }
         }
+
         stage('Deploy') {
             steps {
                 echo 'Deploying JAR to Maven repository...'
