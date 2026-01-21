@@ -28,6 +28,11 @@ pipeline {
 
                 echo 'Archiving artifacts...'
                 archiveArtifacts artifacts: 'build/libs/*.jar, build/docs/javadoc/**', fingerprint: true
+
+
+            cucumber buildStatus: 'UNSTABLE',
+                           reportTitle: 'My report',
+                           fileIncludePattern: 'build/reports/cucumber/cucumber.json',
             }
         }
 
