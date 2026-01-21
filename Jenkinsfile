@@ -36,6 +36,25 @@ pipeline {
     }
 
     post {
+        success {
+            echo 'Build succeeded! Sending notifications...'
+            // Email notification on success
+                mail to: 'srcimene@gmail.com',
+
+                 subject: "SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 body: "The build succeeded!\nCheck details: ${env.BUILD_URL}"
+
+            // slackSend channel: '#builds', color: 'good', message: "Build SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+        }
+        failure {
+            echo 'Build failed! Sending notifications...'
+
+            mail to: 'srcimene@gmail.com',
+                 subject: "FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                 body: "The build failed!\nCheck details: ${env.BUILD_URL}"
+            // Optional Slack notification (if plugin configured)
+            // slackSend channel: '#builds', color: 'danger', message: "Build FAILURE: ${env.JOB_NAME} #${env.BUILD_NUMBER}"
+        }
         always {
             echo 'Pipeline finished!'
         }

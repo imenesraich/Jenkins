@@ -24,7 +24,6 @@
     <orderEntry type="library" name="Gradle: io.cucumber:html-formatter:6.0.2" level="project" />
     <orderEntry type="library" name="Gradle: io.cucumber:messages:12.1.1" level="project" />
     <orderEntry type="library" name="Gradle: io.cucumber:tag-expressions:2.0.4" level="project" />
-    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.10.0" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="tp7_SRAICH.main" />
 </module>
