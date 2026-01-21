@@ -1,0 +1,20 @@
+
+LScenario: Determinant                  [90m# Features/matrix.feature:5[0m
+_  [32mGiven [0m[32mI have A Matrix[0m                [90m# MatrixSteps.iHaveAMatrix()[0m
+‡  [32mWhen [0m[32mI compute determinant of[0m        [90m# MatrixSteps.iComputeDeterminantOf(io.cucumber.datatable.DataTable)[0m
+~  [32mThen [0m[32mThe result of determinant is [0m[32m[1m-9[0m [90m# MatrixSteps.iFindAsDeterminantResult(double)[0m
+
+HScenario: Transpose               [90m# Features/matrix.feature:14[0m
+Z  [32mGiven [0m[32mI have A Matrix[0m           [90m# MatrixSteps.iHaveAMatrix()[0m
+€  [32mWhen [0m[32mI compute transpose of[0m     [90m# MatrixSteps.iComputeTransposeOf(io.cucumber.datatable.DataTable)[0m
+ƒ  [32mThen [0m[32mThe result of transpose is[0m [90m# MatrixSteps.iFindAsTransposeResult(io.cucumber.datatable.DataTable)[0m
+
+FScenario: Inverse               [90m# Features/matrix.feature:26[0m
+X  [32mGiven [0m[32mI have A Matrix[0m         [90m# MatrixSteps.iHaveAMatrix()[0m
+|  [32mWhen [0m[32mI compute inverse of[0m     [90m# MatrixSteps.iComputeInverseOf(io.cucumber.datatable.DataTable)[0m
+  [32mThen [0m[32mThe result of inverse is[0m [90m# MatrixSteps.iFindAsInverseResult(io.cucumber.datatable.DataTable)[0m
+
+GScenario: Cofactor               [90m# Features/matrix.feature:37[0m
+Y  [32mGiven [0m[32mI have A Matrix[0m          [90m# MatrixSteps.iHaveAMatrix()[0m
+~  [32mWhen [0m[32mI compute cofactor of[0m     [90m# MatrixSteps.iComputeCofactorOf(io.cucumber.datatable.DataTable)[0m
+‚  [32mThen [0m[32mThe result of cofactor is[0m [90m# MatrixSteps.iFindAsCofactoreResult(io.cucumber.datatable.DataTable)[0m

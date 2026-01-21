@@ -24,6 +24,8 @@ pipeline {
                 echo 'Generating documentation...'
                 bat 'gradlew javadoc'
 
+                junit '**/build/test-results/test/*.xml'
+
                 echo 'Archiving artifacts...'
                 archiveArtifacts artifacts: 'build/libs/*.jar, build/docs/javadoc/**', fingerprint: true
             }

@@ -1,10 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Matrix" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-01-21T08:45:05" hostname="DESKTOP-1CBJOJU" time="0.532">
+<testsuite name="Matrix" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-01-21T13:12:08" hostname="DESKTOP-1CBJOJU" time="0.565">
   <properties/>
-  <testcase name="Determinant" classname="Matrix" time="0.508"/>
-  <testcase name="Transpose" classname="Matrix" time="0.011"/>
-  <testcase name="Inverse" classname="Matrix" time="0.007"/>
-  <testcase name="Cofactor" classname="Matrix" time="0.005"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="Determinant" classname="Matrix" time="0.519"/>
+  <testcase name="Transpose" classname="Matrix" time="0.021"/>
+  <testcase name="Inverse" classname="Matrix" time="0.012"/>
+  <testcase name="Cofactor" classname="Matrix" time="0.011"/>
+  <system-out><![CDATA[
+Scenario: Determinant                  ?[90m# Features/matrix.feature:5?[0m
+  ?[32mGiven ?[0m?[32mI have A Matrix?[0m                ?[90m# MatrixSteps.iHaveAMatrix()?[0m
+  ?[32mWhen ?[0m?[32mI compute determinant of?[0m        ?[90m# MatrixSteps.iComputeDeterminantOf(io.cucumber.datatable.DataTable)?[0m
+  ?[32mThen ?[0m?[32mThe result of determinant is ?[0m?[32m?[1m-9?[0m ?[90m# MatrixSteps.iFindAsDeterminantResult(double)?[0m
+
+Scenario: Transpose               ?[90m# Features/matrix.feature:14?[0m
+  ?[32mGiven ?[0m?[32mI have A Matrix?[0m           ?[90m# MatrixSteps.iHaveAMatrix()?[0m
+  ?[32mWhen ?[0m?[32mI compute transpose of?[0m     ?[90m# MatrixSteps.iComputeTransposeOf(io.cucumber.datatable.DataTable)?[0m
+  ?[32mThen ?[0m?[32mThe result of transpose is?[0m ?[90m# MatrixSteps.iFindAsTransposeResult(io.cucumber.datatable.DataTable)?[0m
+
+Scenario: Inverse               ?[90m# Features/matrix.feature:26?[0m
+  ?[32mGiven ?[0m?[32mI have A Matrix?[0m         ?[90m# MatrixSteps.iHaveAMatrix()?[0m
+  ?[32mWhen ?[0m?[32mI compute inverse of?[0m     ?[90m# MatrixSteps.iComputeInverseOf(io.cucumber.datatable.DataTable)?[0m
+  ?[32mThen ?[0m?[32mThe result of inverse is?[0m ?[90m# MatrixSteps.iFindAsInverseResult(io.cucumber.datatable.DataTable)?[0m
+
+Scenario: Cofactor               ?[90m# Features/matrix.feature:37?[0m
+  ?[32mGiven ?[0m?[32mI have A Matrix?[0m          ?[90m# MatrixSteps.iHaveAMatrix()?[0m
+  ?[32mWhen ?[0m?[32mI compute cofactor of?[0m     ?[90m# MatrixSteps.iComputeCofactorOf(io.cucumber.datatable.DataTable)?[0m
+  ?[32mThen ?[0m?[32mThe result of cofactor is?[0m ?[90m# MatrixSteps.iFindAsCofactoreResult(io.cucumber.datatable.DataTable)?[0m
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

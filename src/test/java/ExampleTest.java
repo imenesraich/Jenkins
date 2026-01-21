@@ -2,9 +2,16 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
+
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "Features",plugin={"json:reports/example-report.json"}
+@CucumberOptions(
+        features = "Features",
+        plugin = {
+                "pretty",
+                "html:build/reports/cucumber/cucumber.html",
+                "json:build/reports/cucumber/cucumber.json"
+        }
 )
 public class ExampleTest {
-
 }
+
