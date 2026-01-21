@@ -16,13 +16,7 @@ pipeline {
             }
         }
 
-        stage('Code Quality') {
-            steps {
-                withSonarQubeEnv('sonar') { // SonarQube server name in Jenkins
-                    bat "\"%SONARQUBE_SCANNER%\\bin\\sonar-scanner.bat\" -Dsonar.projectKey=MyProjectKey -Dsonar.projectName=MyProjectName"
-                }
-            }
-        }
+
 
         stage('Build') {
             steps {
@@ -36,7 +30,13 @@ pipeline {
                 archiveArtifacts artifacts: 'build/libs/*.jar, build/docs/javadoc/**', fingerprint: true
             }
         }
-
+   stage('Code Quality') {
+            steps {
+                withSonarQubeEnv('sonar') { // SonarQube server name in Jenkins
+                    bat "\"%SONARQUBE_SCANNER%\\bin\\sonar-scanner.bat\" -Dsonar.projectKey=Tp7 -Dsonar.projectName=Tp7"
+                }
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying JAR to Maven repository...'
